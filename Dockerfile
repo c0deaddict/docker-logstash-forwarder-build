@@ -1,9 +1,7 @@
-FROM ubuntu:14.04
+FROM debian:jessie
 
 RUN apt-get update
-RUN apt-get install -y golang git ruby
-RUN apt-get install -y ruby-dev
-RUN apt-get install -y build-essential
+RUN apt-get install -y golang git ruby ruby-dev build-essential rpm
 RUN gem install fpm
 
 ADD build.sh /build.sh
