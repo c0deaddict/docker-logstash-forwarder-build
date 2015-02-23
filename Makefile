@@ -8,7 +8,7 @@ all: build
 build:
 	docker build -t $(NAME):$(VERSION) .
 
-tag_latest: build
+latest: build
 	docker tag -f $(NAME):$(VERSION) $(NAME):latest
 
 #release: tag_latest

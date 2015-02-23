@@ -1,2 +1,2 @@
-    docker build -t codeaddict/logstash-forwarder-build .
-    docker run -it -v /tmp:/target codeaddict/logstash-forwarder-build
+    make latest
+    docker run -it -v /tmp:/target codeaddict/logstash-fwd-build
